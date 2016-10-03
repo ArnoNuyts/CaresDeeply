@@ -36,7 +36,7 @@ class Events extends Fullpage {
 		$this -> _addJS('moment.js');
 		$this -> _addJS('clndr-1.1.0.min.js');
 		*/
-		$this -> _addJS('calendar11.js');
+		$this -> _addJS('calendar12.js');
 		/* Added this to event.css
 		$this -> _addCss('mini-clndr.css);
 		*/
@@ -65,7 +65,7 @@ class Events extends Fullpage {
 		}
 
 		$this -> selected = 'Agenda';
-		$this -> _addJS('calendar11.js');
+		$this -> _addJS('calendar12.js');
 		$this -> _pageTop('Archive');
 		$this -> load -> helper('form');
 		$this -> load -> model('EventModel');
@@ -157,7 +157,7 @@ class Events extends Fullpage {
 		$this -> _addJs('menu.js');
 		$this -> _addJs('statusChange.js');
 		$this -> _addJs('spin.min.js');
-		$this -> _addJs('editEventModal4.js');
+		$this -> _addJs('editEventModal5.js');
 		$this -> _addJs('viewEventModal.js');
 		//$this -> _addCss('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
 		$this -> _pageTop();
@@ -189,7 +189,7 @@ class Events extends Fullpage {
 		$this -> _addJS('moment.js');
 		$this -> _addJS('clndr-1.1.0.min.js');
 		*/
-		$this -> _addJS('calendar11.js');
+		$this -> _addJS('calendar12.js');
 		/* Added this to event.css
 		$this -> _addCss('mini-clndr.css);
 		*/
@@ -288,7 +288,7 @@ class Events extends Fullpage {
 			$this -> _addJs('https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js');
 			$this -> _addCss('eventForm2.css');
 			$this -> _addJs('formStuff3.js');
-			$this -> _addJs('eventForm3.js');
+			$this -> _addJs('eventForm4.js');
 			$this -> _addJs('menu.js');
 			$this -> _pageTop();
 		}
