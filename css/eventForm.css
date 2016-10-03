@@ -1,0 +1,41 @@
+input.focused:invalid, textarea.focused:invalid, select.focused:invalid {
+	-moz-box-shadow: 0 0 5px red !important;
+	-webkit-box-shadow: 0 0 5px red !important;
+	box-shadow: 0 0 5px red !important;
+}
+
+.form-group input, .form-group  textarea, .form-group  select  {
+    display: inline-block;
+    max-width: calc(100% - 20px);
+}
+
+.validatoricon {
+	display: none;
+	height: 20px;
+	width: 20px;
+	padding: 3px;
+	margin-top: 3px;
+	vertical-align: top;
+}
+input.focused:invalid + .validatoricon, textarea.focused:invalid + .validatoricon, select.focused:invalid + .validatoricon {
+	display: inline-block;
+	background: url('/img/ico_validation.png') 4px 4px no-repeat;
+}
+input.focused:valid + .validatoricon, textarea.focused:valid + .validatoricon, select.focused:valid + .validatoricon {
+	display: inline-block;
+	background: url('/img/ico_validation.png') 4px -60px no-repeat;
+
+}
+
+	input:focus + .validatoricon, textarea:focus + .validatoricon, select:focus + .validatoricon {
+		display: none !important;
+	}
+
+	input:focus:invalid, textarea:focus:invalid, select:focus:invalid {
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+input:focus + div + div.expldiv span.expl, textarea:focus + div +  div.expldiv span.expl, select:focus + div + div.expldiv span.expl, input:hover + div + div.expldiv span.expl, textarea:hover + div +  div.expldiv span.expl, select:hover + div + div.expldiv span.expl {
+	opacity: 0.8;
+}

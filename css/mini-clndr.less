@@ -1,0 +1,146 @@
+@text-color: #222;
+@base: fade(#000, 30%);
+@text-on-base: #222;
+
+a.btn-add {
+	background-color: @base;
+	color: @text-on-base;
+	padding: 4px;
+	font-size: 14pt;
+	font-weight: 200;
+	margin-top: 16px;
+	text-align: center;
+	clear: both;
+	
+	&:hover {
+		background-color: darken(@base, 20%);
+		text-decoration: none;
+	}
+}
+
+.noselect
+{
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+}
+
+.vertical-padding(@size: 5px)
+{
+  padding-top: @size;
+  padding-bottom: @size;
+}
+
+#mini-clndr
+{
+  
+  margin: 0;
+}
+@media (min-width: 768px) {
+	#clndr-sidebar {
+		//position: fixed;
+	}
+}
+
+#mini-clndr .clndr
+{
+
+  .controls
+  {
+	background-color: @base;
+    color: @text-on-base;
+	//border-top: 1px solid @base;
+	//border-bottom: 1px solid @base;
+	
+
+    .clndr-previous-button, .clndr-next-button
+    {
+      width: 15%;
+      .vertical-padding;
+      display: inline-block;
+      text-align: center;
+      cursor: pointer;
+      .noselect;
+      
+      &:hover
+      {
+        background-color: darken(@base, 10%);
+      }
+    }
+    .month
+    {
+      width: 70%;
+      .vertical-padding;
+      display: inline-block;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+  }
+
+  .days-container
+  {
+    position: relative;
+    width: 100%;
+    
+
+    .days
+    {
+      
+      width: 100%;
+      
+		
+		
+      .day, .empty
+      {
+	  border: 1px solid @base;
+        width: 14.285%;
+        display: inline-block;
+        .vertical-padding(8px);
+
+        font-size: 12px;
+        text-align: center;
+        color: @base;
+
+        border-right: 0px;
+        border-bottom:0px;
+
+        &.event
+        {
+          cursor: pointer;
+		  font-weight: bold;
+		  background-color: fade(@base, 10%);
+          &:hover
+          {
+          }
+        }
+
+        &.adjacent-month
+        {
+          color: rgba(0, 0, 0, 0.3);
+        }
+		&:nth-child(7n+2) {
+			border-left: 0;
+		}
+      }
+		
+
+      .headers
+      {
+       
+	border: 0;
+        .day-header
+        {
+			padding: 0;
+			//border: 1px solid @base;
+          width: 14.285%;
+          display: inline-block;
+          text-align: center;
+          color: @base;
+        }
+      }
+    }
+}
+    
+}
