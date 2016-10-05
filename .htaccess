@@ -3,7 +3,7 @@ RewriteEngine On
 Header always set X-Frame-Options "DENY"
 Header always set X-Content-Type-Options "nosniff"
 Header always set X-Xss-Protection "1; mode=block"
-Header always set Content-Security-Policy "default-src https: 'self' 'unsafe-inline' 'unsafe-eval' style-src: 'self' fonts.googleapis.com script-src: 'self' cdnjs.cloudflare.com"
+Header always set Content-Security-Policy "default-src 'self' image-src: 'self' https://*.tile.openstreetmap.org style-src: 'self' https://fonts.googleapis.com script-src: 'unsafe-inline' 'unsafe-eval' 'self' https://cdnjs.cloudflare.com font-src: 'self' https://fonts.gstatic.com"
 
 RewriteCond %{REQUEST_URI}::$1 ^(.*?/)(.*)::\2$
 RewriteRule ^(.*)$ - [E=BASE:%1]
