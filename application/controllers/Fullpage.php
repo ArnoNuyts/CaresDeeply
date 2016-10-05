@@ -4,7 +4,7 @@ class Fullpage extends CI_Controller {
 
 	public $bodyData = [
 		'javascripts' => ['https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js'],
-		'css' => ['https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,500,700|Droid+Sans:700','main5.css'],
+		'css' => ['https://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,500,700|Droid+Sans:700','main6.css'],
 		'title' => '',
     'fb_img' => 'http://www.caresdeeply.be/img/logo.png',
     'fb_title' => 'Cares Deeply',
