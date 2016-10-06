@@ -23,7 +23,7 @@ var events = [
   <?= form_close(); ?>
 	<div class="row">
 		<div class="col-xs-2 col-lg-3">
-  		<a target="_blank" href="https://www.facebook.com/caresdeeply/"><img src="<?= base_url('/img/fb_icon.svg'); ?>" height="44px" width="44px" /></a>
+  		<a target="_blank" href="https://www.facebook.com/caresdeeply/"><img alt="Facebook Page" src="<?= base_url('/img/fb_icon.svg'); ?>" height="44px" width="44px" /></a>
 		</div>
 		<div class="col-xs-10 col-lg-9">
             <a href="<?= base_url('events/archive') ?>" class="btn-btn">Archive</a>
